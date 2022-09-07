@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+  <head> 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
@@ -201,21 +201,34 @@
           
         </p>
         <div class="submit" style="width: 80%">
-          <form>
+          <form action="./SendMail.php" name="form-contato" method="post"> 
+
+            <input
+            class="w3-input w3-round w3-theme-d3 w3-border"
+            type="text-name"
+            placeholder="Digite seu nome completo..."
+            name="nome"
+            required
+          />
+          <br>
             <input
               class="w3-input w3-round w3-theme-d3 w3-border"
               type="text"
               placeholder="Seu email..."
               name="email"
+              required
             />
             <br>
             <input 
             class="w3-input w3-round w3-theme-d3 w3-border"
             placeholder="Digite uma mensagem..."
-            name="text-box"
-            type="text">
+            name="mensagem"
+            type="text"
+            required
+            />
+          
             <br>
-            <button class="w3-button w3-round w3-border" type="submit">
+            <button class="w3-button w3-round w3-border" type="submit" value="Enviar">
             Enviar mensagem.
             </button>
           </form>
